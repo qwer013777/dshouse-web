@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .box { fill: none; stroke: #0A2A6B; stroke-width: 24; }
+      .txt { fill: #0A2A6B; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+  <rect class="box" x="64" y="64" width="384" height="384" rx="64" ry="64"/>
+  <text class="txt" x="256" y="296" font-size="168" text-anchor="middle">DSH</text>
+</svg>

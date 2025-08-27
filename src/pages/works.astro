@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Works | 이동수하우스" description="샘플/파일럿/운영 사례">
+  <!-- HERO -->
+  <section class="relative overflow-hidden rounded-2xl border border-black/5 dark:border-white/10 p-10">
+    <div class="absolute -top-24 -left-24 w-[520px] h-[520px] rounded-full blur-3xl opacity-60 pointer-events-none
+                bg-[radial-gradient(circle_at_center,_rgba(71,163,255,0.25),_transparent_60%)]"></div>
+    <div class="absolute -bottom-28 -right-10 w-[520px] h-[520px] rounded-full blur-3xl opacity-60 pointer-events-none
+                bg-[radial-gradient(circle_at_center,_rgba(110,231,255,0.25),_transparent_60%)]"></div>
+
+    <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
+      <span class="gradient-text">Works</span>
+    </h1>
+    <p class="mt-4 max-w-2xl text-gray-600 dark:text-gray-300">
+      작은 실험에서 시작해 운영으로 이어진 사례들입니다. 공개 가능한 범위에서 요약했습니다.
+    </p>
+  </section>
+
+  <!-- 카드 리스트 -->
+  <section class="mt-12 grid gap-6 md:grid-cols-2">
+    <!-- 프로젝트 1 -->
+    <article class="p-[1px] rounded-2xl bg-gradient-to-br from-[rgba(71,163,255,0.6)] to-[rgba(110,231,255,0.4)]">
+      <div class="card rounded-2xl bg-white/80 dark:bg-white/5">
+        <header class="flex items-start justify-between gap-3">
+          <h3 class="text-lg font-semibold">대기질 알림 앱 (시제품)</h3>
+          <span class="rounded-full border px-2 py-1 text-xs">공공데이터</span>
+        </header>
+        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
+          지역별 미세먼지/오존 지수 알림 · 위젯. 캐시 전략으로 API 비용 절감.
+        </p>
+        <ul class="mt-4 text-sm space-y-2">
+          <li>• 데이터: AirKorea/Open API</li>
+          <li>• 기능: 지역 즐겨찾기, 지수 변동 알림</li>
+          <li>• 결과: 사용자 테스트 1주 → 개선 포인트 도출</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 프로젝트 2 -->
+    <article class="p-[1px] rounded-2xl bg-gradient-to-br from-[rgba(71,163,255,0.6)] to-[rgba(110,231,255,0.4)]">
+      <div class="card rounded-2xl bg-white/80 dark:bg-white/5">
+        <header class="flex items-start justify-between gap-3">
+          <h3 class="text-lg font-semibold">스마트 오피스텔 관리 대시보드 (PoC)</h3>
+          <span class="rounded-full border px-2 py-1 text-xs">하이브리드</span>
+        </header>
+        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
+          전력/온도/EV 충전 로그를 수집·시각화. 경량 장비와 웹 대시보드 연동.
+        </p>
+        <ul class="mt-4 text-sm space-y-2">
+          <li>• 데이터: 센서/미터 수집 + 서버 캐시</li>
+          <li>• 기능: 이상치 알림, 월간 리포트</li>
+          <li>• 결과: 운영 비용/에너지 사용량 가시화</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 프로젝트 3 -->
+    <article class="p-[1px] rounded-2xl bg-gradient-to-br from-[rgba(71,163,255,0.6)] to-[rgba(110,231,255,0.4)]">
+      <div class="card rounded-2xl bg-white/80 dark:bg-white/5">
+        <header class="flex items-start justify-between gap-3">
+          <h3 class="text-lg font-semibold">소규모 단체 예약·공지 플랫폼</h3>
+          <span class="rounded-full border px-2 py-1 text-xs">운영</span>
+        </header>
+        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
+          예약, 출입 QR, 공지 유통을 한 화면에서. 관리자용 경량 CMS 포함.
+        </p>
+        <ul class="mt-4 text-sm space-y-2">
+          <li>• 기능: 예약 승인/대기, 공지 스케줄</li>
+          <li>• 운영: 백업/모니터링/간편 리포트</li>
+          <li>• 결과: 응답시간 단축, 중복 예약 감소</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 프로젝트 4 (샘플) -->
+    <article class="p-[1px] rounded-2xl bg-gradient-to-br from-[rgba(71,163,255,0.6)] to-[rgba(110,231,255,0.4)]">
+      <div class="card rounded-2xl bg-white/80 dark:bg-white/5">
+        <header class="flex items-start justify-between gap-3">
+          <h3 class="text-lg font-semibold">지도 시각화 포털 (샘플)</h3>
+          <span class="rounded-full border px-2 py-1 text-xs">데이터</span>
+        </header>
+        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
+          공공데이터 + 지도 SDK로 지역 서비스를 한 화면에 모으는 실험.
+        </p>
+        <ul class="mt-4 text-sm space-y-2">
+          <li>• 데이터: 교통/시설/안전</li>
+          <li>• 기능: 필터/검색/공유 링크</li>
+          <li>• 결과: 커뮤니티 피드백 수집</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <!-- CTA -->
+  <section class="mt-16 text-center rounded-2xl p-10 border border-black/5 dark:border-white/10
+                   bg-[linear-gradient(135deg,rgba(71,163,255,0.12),rgba(110,231,255,0.12))]">
+    <h2 class="text-2xl font-bold">비슷한 프로젝트를 시작해볼까요?</h2>
+    <p class="mt-2 text-gray-600 dark:text-gray-300">파일럿부터 운영까지, 필요한 범위만 빠르게 진행합니다.</p>
+    <a href="/contact" class="mt-6 inline-block btn btn-primary">상담 요청</a>
+  </section>
+</BaseLayout>

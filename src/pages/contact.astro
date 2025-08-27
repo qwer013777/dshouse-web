@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout title="Contact | 이동수하우스">
+  <h1 class="text-2xl font-bold">문의하기</h1>
+
+  <form id="contact-form"
+        action="https://formspree.io/f/xqalvjwd"
+        method="POST"
+        accept-charset="UTF-8"
+        class="mt-6 max-w-xl space-y-4">
+
+    <!-- 이름 -->
+    <label class="block text-sm font-medium" for="name">이름</label>
+    <input id="name" name="name" required
+           autocomplete="name"
+           class="w-full border rounded-lg px-4 py-3" />
+
+    <!-- 이메일 -->
+    <label class="block text-sm font-medium" for="email">이메일</label>
+    <input id="email" name="email" type="email" required
+           autocomplete="email"
+           inputmode="email"
+           class="w-full border rounded-lg px-4 py-3" />
+
+    <!-- 메시지 -->
+    <label class="block text-sm font-medium" for="message">문의 내용</label>
+    <textarea id="message" name="message" rows="6" required
+              class="w-full border rounded-lg px-4 py-3"></textarea>
+
+    <!-- (선택) 전화번호: 원하시면 사용 -->
+    <!--
+    <label class="block text-sm font-medium" for="phone">연락처(선택)</label>
+    <input id="phone" name="phone" type="tel"
+           autocomplete="tel"
+           class="w-full border rounded-lg px-4 py-3" />
+    -->
+
+    <!-- 허니팟(봇 차단용) -->
+    <div class="hidden" aria-hidden="true">
+      <label>Leave this empty
+        <input type="text" name="_hp" tabindex="-1" autocomplete="off" />
+      </label>
+    </div>
+
+    <!-- (선택) 제목 설정 -->
+    <input type="hidden" name="subject" value="이동수하우스 문의" />
+
+    <button id="submit-btn" type="submit"
+            class="rounded-lg border px-6 py-3">
+      보내기
+    </button>
+
+    <!-- 상태 메시지 -->
+    <p id="form-status" class="text-sm text-gray-600 mt-2" aria-live="polite"></p>
+  </form>
+
+  <div class="mt-10 text-sm text-gray-600">
+    이메일: <span class="underline">qwer013777@gmail.com</span>
+    · 전화:
+    <!-- 스팸수집 방지: 숫자 나누기 -->
+    <span>010-6645-</span><span>0137</span>
+  </div>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const statusEl = document.getElementById('form-status');
+    const btn = document.getElementById('submit-btn');
+
+    form.addEventListener('submit', async (e) => {
+      // 간단 이메일 검증
+      const email = form.email?.value || '';
+      if (!email.includes('@')) {
+        e.preventDefault();
+        statusEl.textContent = '이메일 형식이 올바르지 않습니다.';
+        return;
+      }
+
+      e.preventDefault();
+      btn.disabled = true;
+      statusEl.textContent = '전송 중입니다...';
+
+      try {
+        const data = new FormData(form);
+        // 허니팟이 채워져 있으면 전송 중단
+        if (data.get('_hp')) {
+          statusEl.textContent = '전송이 차단되었습니다.';
+          btn.disabled = false;
+          return;
+        }
+
+        const res = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (res.ok) {
+          form.reset();
+          statusEl.textContent = '전송되었습니다. 확인 후 연락드리겠습니다.';
+        } else {
+          statusEl.textContent = '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.';
+        }
+      } catch (err) {
+        statusEl.textContent = '네트워크 오류가 발생했습니다.';
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  </script>
+</BaseLayout>

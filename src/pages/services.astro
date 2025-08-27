@@ -1,0 +1,215 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Services | 이동수하우스" description="생활·환경을 위한 공공데이터 기반 IT 서비스">
+  <!-- HERO -->
+  <section class="relative overflow-hidden rounded-2xl border border-black/5 dark:border-white/10 p-10">
+    <div class="absolute -top-24 -left-24 w-[520px] h-[520px] rounded-full blur-3xl opacity-60 pointer-events-none
+                bg-[radial-gradient(circle_at_center,_rgba(71,163,255,0.25),_transparent_60%)]"></div>
+    <div class="absolute -bottom-28 -right-10 w-[520px] h-[520px] rounded-full blur-3xl opacity-60 pointer-events-none
+                bg-[radial-gradient(circle_at_center,_rgba(110,231,255,0.25),_transparent_60%)]"></div>
+
+    <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
+      <span class="gradient-text">Services</span>
+    </h1>
+    <p class="mt-4 max-w-2xl text-gray-600 dark:text-gray-300">
+      공공데이터를 활용하고, 온라인과 오프라인을 연결하는 하이브리드 IT 솔루션을 제공합니다.
+      <br class="hidden md:block" />필요한 것만 빠르게 구축하고 안정적으로 운영합니다.
+    </p>
+
+    <div class="mt-6 flex flex-wrap gap-2 text-xs">
+      <span class="rounded-full border px-3 py-1">공공데이터</span>
+      <span class="rounded-full border px-3 py-1">스마트홈/에너지</span>
+      <span class="rounded-full border px-3 py-1">시설/단체 운영</span>
+      <span class="rounded-full border px-3 py-1">대시보드</span>
+      <span class="rounded-full border px-3 py-1">유지보수</span>
+    </div>
+  </section>
+
+  <!-- 서비스 카드 -->
+  <section class="mt-12 grid gap-6 md:grid-cols-2">
+    <!-- 카드 1 -->
+    <div class="p-[1px] rounded-2xl bg-gradient-to-br from-[rgba(71,163,255,0.6)] to-[rgba(110,231,255,0.4)]">
+      <div class="card rounded-2xl bg-white/80 dark:bg-white/5">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl
+                        bg-[radial-gradient(circle,_rgba(71,163,255,0.2),_transparent_60%)]
+                        text-[--color-primary]">
+            <!-- 아이콘: 데이터 -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <ellipse cx="12" cy="5" rx="8" ry="3" stroke-width="2"/>
+              <path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5" stroke-width="2"/>
+              <path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" stroke-width="2"/>
+            </svg>
+          </span>
+          <h3 class="text-lg font-semibold">공공데이터 기반 서비스</h3>
+        </div>
+        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
+          대기질·교통·날씨·부동산 등 오픈 API를 연계해 생활 밀착형 서비스를 만듭니다.
+        </p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li>• 지역 지표 알림/위젯, 지도 시각화</li>
+          <li>• 데이터 수집·정제·캐시 전략</li>
+          <li>• 간단한 데이터 포털/검색</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 카드 2 -->
+    <div class="p-[1px] rounded-2xl bg-gradient-to-br from-[rgba(71,163,255,0.6)] to-[rgba(110,231,255,0.4)]">
+      <div class="card rounded-2xl bg-white/80 dark:bg-white/5">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl
+                        bg-[radial-gradient(circle,_rgba(110,231,255,0.2),_transparent_60%)]
+                        text-[--color-primary]">
+            <!-- 아이콘: 집/전력 -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M4 11L12 4l8 7v8H4z" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 9v4l-2 3m2-3 2-1" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <h3 class="text-lg font-semibold">생활·환경 맞춤 개발</h3>
+        </div>
+        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
+          스마트홈, 에너지 모니터링, 예약/알림 등 현장에서 바로 쓰는 기능 위주로 구현합니다.
+        </p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li>• 센서/미터 데이터 수집 대시보드</li>
+          <li>• 예약·공지·QR 체크인</li>
+          <li>• 단체/시설 운영 미니 CMS</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 카드 3 -->
+    <div class="p-[1px] rounded-2xl bg-gradient-to-br from-[rgba(71,163,255,0.6)] to-[rgba(110,231,255,0.4)]">
+      <div class="card rounded-2xl bg-white/80 dark:bg-white/5">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl
+                        bg-[radial-gradient(circle,_rgba(71,163,255,0.2),_transparent_60%)]
+                        text-[--color-primary]">
+            <!-- 아이콘: 브릿지 -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M4 16V8m16 8V8M4 12h16" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 16v-2a4 4 0 0 1 8 0v2" stroke-width="2"/>
+            </svg>
+          </span>
+          <h3 class="text-lg font-semibold">IT + 오프라인 융합</h3>
+        </div>
+        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
+          교회·주민센터·상가 등 오프라인 운영에 맞춘 하이브리드 솔루션을 제공합니다.
+        </p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li>• 출입/자원 예약 + 온라인 공지</li>
+          <li>• 매장/시설 운영 대시보드</li>
+          <li>• 온·오프라인 데이터 통합</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 카드 4 -->
+    <div class="p-[1px] rounded-2xl bg-gradient-to-br from-[rgba(71,163,255,0.6)] to-[rgba(110,231,255,0.4)]">
+      <div class="card rounded-2xl bg-white/80 dark:bg-white/5">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl
+                        bg-[radial-gradient(circle,_rgba(110,231,255,0.2),_transparent_60%)]
+                        text-[--color-primary]">
+            <!-- 아이콘: 방패/렌치 -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M12 3l7 3v6a7 7 0 0 1-7 7a7 7 0 0 1-7-7V6l7-3z" stroke-width="2"/>
+              <path d="M12 10.5v4.5m2.5-2.5H9.5" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <h3 class="text-lg font-semibold">운영·유지보수</h3>
+        </div>
+        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
+          모니터링/백업/보안/문서화를 기본으로, 분기 점검 리포트를 제공합니다.
+        </p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li>• 성능/오류 모니터링</li>
+          <li>• 데이터 백업/점검 리포트</li>
+          <li>• 소규모 SLA(응답시간 합의)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 진행 프로세스 -->
+  <section class="mt-14">
+    <h2 class="text-xl font-semibold">진행 프로세스</h2>
+    <ol class="mt-6 grid gap-6 md:grid-cols-5 text-sm">
+      <li class="card text-center">
+        <div class="font-semibold">01. Discovery</div>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">요구사항·데이터·현장 파악</p>
+      </li>
+      <li class="card text-center">
+        <div class="font-semibold">02. Design</div>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">흐름/화면/데이터 스키마</p>
+      </li>
+      <li class="card text-center">
+        <div class="font-semibold">03. Build</div>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">MVP 개발/연동</p>
+      </li>
+      <li class="card text-center">
+        <div class="font-semibold">04. Launch</div>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">배포/문서/교육</p>
+      </li>
+      <li class="card text-center">
+        <div class="font-semibold">05. Care</div>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">모니터링/유지보수</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 패키지(견적 가이드) -->
+  <section class="mt-14">
+    <h2 class="text-xl font-semibold">패키지</h2>
+    <div class="mt-6 grid gap-6 md:grid-cols-3">
+      <!-- Starter -->
+      <div class="card rounded-2xl">
+        <div class="text-sm text-gray-500">Starter</div>
+        <div class="mt-2 text-2xl font-bold">₩50만 ~ 150만</div>
+        <ul class="mt-3 text-sm space-y-2">
+          <li>• 단일 기능(MVP) 1개</li>
+          <li>• 공공데이터 1~2개 연동</li>
+          <li>• 기본 대시보드/폼</li>
+        </ul>
+        <a href="/contact" class="mt-4 inline-block btn btn-primary">견적 문의</a>
+      </div>
+
+      <!-- Standard -->
+      <div class="card rounded-2xl border-2 border-[--color-primary]">
+        <div class="text-sm text-gray-500">Standard</div>
+        <div class="mt-2 text-2xl font-bold">₩150만 ~ 350만</div>
+        <ul class="mt-3 text-sm space-y-2">
+          <li>• 핵심 기능 2~3개</li>
+          <li>• 데이터/지도 시각화</li>
+          <li>• 운영 환경 세팅 + 문서</li>
+        </ul>
+        <a href="/contact" class="mt-4 inline-block btn btn-primary">견적 문의</a>
+      </div>
+
+      <!-- Care (월 구독) -->
+      <div class="card rounded-2xl">
+        <div class="text-sm text-gray-500">Care (월)</div>
+        <div class="mt-2 text-2xl font-bold">₩10만 ~</div>
+        <ul class="mt-3 text-sm space-y-2">
+          <li>• 모니터링/백업</li>
+          <li>• 분기 리포트</li>
+          <li>• 경미 이슈 핫픽스</li>
+        </ul>
+        <a href="/contact" class="mt-4 inline-block btn btn-primary">문의하기</a>
+      </div>
+    </div>
+    <p class="mt-3 text-xs text-gray-500">※ 실제 비용은 범위·데이터·연동 시스템에 따라 달라집니다.</p>
+  </section>
+
+  <!-- CTA -->
+  <section class="mt-16 text-center rounded-2xl p-10 border border-black/5 dark:border-white/10
+                   bg-[linear-gradient(135deg,rgba(71,163,255,0.12),rgba(110,231,255,0.12))]">
+    <h2 class="text-2xl font-bold">작게 시작해서 빠르게 검증하세요.</h2>
+    <p class="mt-2 text-gray-600 dark:text-gray-300">샘플/Pilot부터 운영까지 단계적으로 도와드립니다.</p>
+    <a href="/contact" class="mt-6 inline-block btn btn-primary">프로젝트 상담하기</a>
+  </section>
+</BaseLayout>

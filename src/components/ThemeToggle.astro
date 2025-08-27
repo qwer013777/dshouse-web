@@ -1,0 +1,11 @@
+<button
+  class="rounded-lg border px-3 py-2 text-sm"
+  aria-label="Toggle dark mode"
+  onclick="
+    const html = document.documentElement;
+    const next = html.classList.toggle('dark');
+    try { localStorage.setItem('theme', next ? 'dark' : 'light'); } catch(e){}
+  "
+>
+  🌓
+</button>

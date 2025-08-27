@@ -1,0 +1,34 @@
+# 기본적으로 모든 텍스트 파일은 LF로 강제
+* text=auto eol=lf
+
+# Windows 배치 파일은 CRLF 유지
+*.bat     text eol=crlf
+
+# 쉘 스크립트는 LF 유지
+*.sh      text eol=lf
+
+# 코드 관련
+*.js      text eol=lf
+*.jsx     text eol=lf
+*.ts      text eol=lf
+*.tsx     text eol=lf
+*.json    text eol=lf
+*.css     text eol=lf
+*.scss    text eol=lf
+*.html    text eol=lf
+*.md      text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+
+# Binary (라인 엔딩 변환 금지)
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.svg     binary
+*.pdf     binary
+*.ttf     binary
+*.woff    binary
+*.woff2   binary
+*.eot     binary
