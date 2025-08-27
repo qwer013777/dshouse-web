@@ -1,21 +1,19 @@
-MIT License
+# Content & Brand License
 
-Copyright (c) 2025 dslee1371
+다음 항목은 별도 표시가 없는 한 모두 © 2025 이동수하우스, All Rights Reserved 입니다.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+- 웹사이트의 텍스트, 글/문서, 마케팅 카피
+- 이미지, 일러스트, 사진, 아이콘(브랜드 자산)
+- 로고, 상호, 도메인, 기타 식별자(트레이드마크 포함)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+위 자산은 사전 서면 허가 없이 복제, 수정, 재배포, 상업적 사용을 금지합니다.
+프로젝트 코드(소스)는 저장소의 `LICENSE`(MIT)에 따릅니다.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Notice
+This project includes open source components.
+Source code is licensed under the MIT License (see LICENSE).
+Website content and brand assets are © 2025 이동수하우스, All Rights Reserved.
+
+## License
+- Code: MIT © 2025 이동수하우스
+- Content & Brand: All Rights Reserved (see LICENSE-content.md)
