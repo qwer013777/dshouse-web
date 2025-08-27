@@ -228,3 +228,8 @@ gcloud compute forwarding-rules list --filter=${SERVICE}-fr-https
 ## 📬 문의
 - 이메일: `qwer013777@gmail.com`
 - 도메인: `https://www.dshouse.co.kr`
+
+## License
+- Code: MIT © 2025 이동수하우스 (see `LICENSE`)
+- Content & Brand: All Rights Reserved (see `LICENSE-content.md`)
+- Trademarks: 이동수하우스 이름/로고는 상표이며 무단 사용을 금지합니다.
